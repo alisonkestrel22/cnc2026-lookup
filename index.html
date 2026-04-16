@@ -196,7 +196,7 @@
 <header>
   <div class="badge">🌿 City Nature Challenge 2026</div>
   <h1>Is your location<br>part of <em>CNC 2026?</em></h1>
-  <p class="subtitle">Enter any city, neighborhood, or address to check if it's within a registered City Nature Challenge 2026 project boundary.</p>
+  <p class="subtitle">Enter any city, neighborhood, or address to check if it's within (or near) a registered City Nature Challenge 2026 project boundary. This tool uses bounding boxes rather than precise boundaries, so if a project is returned, be sure to visit the project page to see if your location is within the boundary vs. near the boundary.</p>
 </header>
 
 <div class="lookup-card">
@@ -412,7 +412,7 @@ function renderResult({ verdict, explanation, matches, geocodedAs, lat, lng }) {
           <div class="project-city">🌿 ${m.n}</div>
           <div class="project-meta">${m.c}</div>
           <a href="${m.l}" target="_blank" class="project-link-btn">View iNaturalist Project ↗</a>
-          <p class="project-verify-note">Results may not always be correct — please click the project link to confirm your location is within the boundary.</p>
+          <p class="project-verify-note">Results may not always be correct — please click the project link to confirm your location is within or just near the boundary.</p>
         </div>`).join('') +
       '</div>';
   }
